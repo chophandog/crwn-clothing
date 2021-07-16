@@ -5,8 +5,8 @@ import "./menu-item.styles.scss";
 
 const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
   <div
-    className={`menu-item ${size}`}
     onClick={() => history.push(`${match.url}${linkUrl}`)}
+    className={`menu-item ${size}`}
   >
     <div
       style={{
@@ -20,5 +20,7 @@ const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
     </div>
   </div>
 );
+
+//Higher order component
 
 export default withRouter(MenuItem);
