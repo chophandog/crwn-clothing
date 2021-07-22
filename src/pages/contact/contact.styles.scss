@@ -65,6 +65,24 @@
           transform: scale(1.2, 1.2);
         }
       }
+
+      .facebook {
+        &:hover {
+          color: #365899;
+        }
+      }
+
+      .github {
+        &:hover {
+          color: #0d2636;
+        }
+      }
+
+      .gmail {
+        &:hover {
+          color: #ea4335;
+        }
+      }
     }
   }
 }

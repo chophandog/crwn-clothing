@@ -12,6 +12,7 @@ const ContactPage = () => {
       <div className="contact-item-wrapper">
         <div className="contact-item">
           <a
+            className="facebook"
             href="https://www.facebook.com/chophandog"
             target="_blank"
             rel="noreferrer"
@@ -24,6 +25,7 @@ const ContactPage = () => {
 
         <div className="contact-item">
           <a
+            className="github"
             href="https://github.com/chophandog"
             target="_blank"
             rel="noreferrer"
@@ -36,6 +38,7 @@ const ContactPage = () => {
 
         <div className="contact-item">
           <a
+            className="gmail"
             href="mailto:jobs.phanthanhtu@gmail.com"
             target="_blank"
             rel="noreferrer"
