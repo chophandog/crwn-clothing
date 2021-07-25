@@ -1,16 +1,25 @@
 import React from "react";
+
 import { AiFillFacebook, AiFillGithub, AiFillMail } from "react-icons/ai";
-import "./contact.styles.scss";
+
+import {
+  ContactPageContainer,
+  ContactHeading,
+  ContactName,
+  TextContactHeading,
+  ContactItemWrapper,
+  ContactItem,
+} from "./contact.styles";
 
 const ContactPage = () => {
   return (
-    <div className="contact-page">
-      <p className="contact-heading">Hi !</p>
-      <h3>My name is Phan Thanh Tu</h3>
-      <p className="text-contact-heading">I'm a front-end Developer</p>
+    <ContactPageContainer>
+      <ContactHeading>Hi !</ContactHeading>
+      <ContactName>My name is Phan Thanh Tu</ContactName>
+      <TextContactHeading>I'm a front-end Developer</TextContactHeading>
 
-      <div className="contact-item-wrapper">
-        <div className="contact-item">
+      <ContactItemWrapper>
+        <ContactItem>
           <a
             className="facebook"
             href="https://www.facebook.com/chophandog"
@@ -21,9 +30,9 @@ const ContactPage = () => {
           </a>
           <h3>Facebook</h3>
           <p>facebook.com/chophandog</p>
-        </div>
+        </ContactItem>
 
-        <div className="contact-item">
+        <ContactItem>
           <a
             className="github"
             href="https://github.com/chophandog"
@@ -34,9 +43,9 @@ const ContactPage = () => {
           </a>
           <h3>Github</h3>
           <p>github.com/chophandog</p>
-        </div>
+        </ContactItem>
 
-        <div className="contact-item">
+        <ContactItem>
           <a
             className="gmail"
             href="mailto:jobs.phanthanhtu@gmail.com"
@@ -47,9 +56,9 @@ const ContactPage = () => {
           </a>
           <h3>E-mail</h3>
           <p>jobs.phanthanhtu@gmail.com</p>
-        </div>
-      </div>
-    </div>
+        </ContactItem>
+      </ContactItemWrapper>
+    </ContactPageContainer>
   );
 };
 

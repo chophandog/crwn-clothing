@@ -1,7 +1,9 @@
 import React from "react";
 
-import "./footer.styles.scss";
+import { FooterContainer } from "./footer.styles";
 
-const Footer = () => <h2 className="footer">© Copyright 2021 Chophandog</h2>;
+const Footer = () => (
+  <FooterContainer>© Copyright 2021 Chophandog</FooterContainer>
+);
 
 export default Footer;
