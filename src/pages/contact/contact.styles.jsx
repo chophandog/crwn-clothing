@@ -38,6 +38,11 @@ export const ContactItemWrapper = styled.div`
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 export const ContactItem = styled.div`
@@ -60,7 +65,6 @@ export const ContactItem = styled.div`
     background-color: white;
     font-size: 60px;
     color: black;
-    padding: 40px;
     border-radius: 50%;
     display: inline-block;
     transition: all 0.5s;
@@ -86,5 +90,9 @@ export const ContactItem = styled.div`
     &:hover {
       color: #ea4335;
     }
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
   }
 `;
