@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import CustomButton from "../../components/custom-button/custom-button.component";
+
 export const CheckoutPageContainer = styled.div`
   width: 55%;
   min-height: 90vh;
@@ -52,4 +54,21 @@ export const WarningContainer = styled.div`
   margin-top: 40px;
   font-size: 24px;
   color: red;
+`;
+
+export const CartEmptyContainer = styled.div`
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    padding: 10px;
+  }
+`;
+
+export const ShoppingNowButton = styled(CustomButton)`
+  margin-top: 75px;
+  margin-bottom: 50px;
 `;
